@@ -873,6 +873,47 @@ body {
   font-size: 15px;
   list-style: circle;
 }
+  /* PARTENAIRES */
+.nos-partenaires {
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: #ffffff7a;
+  box-shadow: 5px 2px 20px 5px #00000021;
+
+}
+.partenaires {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+  
+  
+}
+ .nos-partenaires .partenaire-header-div {
+  width: 1250px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+} 
+.nos-partenaires .partenaire-header-div .partenaire-header {
+  color: #09406d;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Inter ,sans-serif;
+}
+.partenaire .title-partenaire {
+  color: #fda38d;
+  margin-left: 30%;
+}
+.partenaire {
+  padding: 0.5rem;
+}
+.partenaire img {
+  width: 230px;
+  height: 200px;
+  border-radius: 5px;
+}
 @media screen and (max-width: 31.25em) {
   .header {
     display: flex;
