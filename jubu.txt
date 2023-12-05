@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-jubu arakunda utudemu
-=======
-jubu numwana mwiza cane
->>>>>>> 307069a755cbb0c619c8345e507724241fef8067
+hello mumeze neuza
