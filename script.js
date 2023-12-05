@@ -12,7 +12,7 @@ const metadonne = [
     "./9.jpg",
     "./10.jpg",
     "./11.jpg",
-    "./laboElectronic2.png",
+    "./12.jpg",
 ]
 const banner = document.querySelector(".banner img")
 console.log(banner)

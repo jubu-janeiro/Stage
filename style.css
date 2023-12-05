@@ -106,30 +106,32 @@ body {
   color: #0a2f4d;
   top: 53px;
   width: 400px;
+  pointer-events: none;
   left: 0;
   opacity: 0;
 }
-.header .seconder-header .list-heder ul li  {
+.header .seconder-header .list-heder ul li {
   font-size: 14px;
   padding: 7px 10px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
 }
-.header .seconder-header .list-heder ul li a{
+.header .seconder-header .list-heder ul li a {
   display: flex;
   flex-direction: column;
   color: black;
 }
-.header .seconder-header .list-heder ul li:hover{
+.header .seconder-header .list-heder ul li:hover {
   background: var(--hover-color);
   color: black;
 }
 .header .seconder-header .list-heder a {
   color: white;
 }
-.header .seconder-header .list-heder:hover > ul{
+.header .seconder-header .list-heder:hover > ul {
   opacity: 1;
+  pointer-events: all;
 }
 .header .seconder-header div {
   padding: 15px 5px;
@@ -172,9 +174,8 @@ body {
 .banner-contact h1 {
   position: absolute;
   color: white;
-
 }
-.banner-contact p{
+.banner-contact p {
   position: absolute;
   color: white;
   top: 60%;
@@ -401,6 +402,7 @@ body {
 }
 
 .footer {
+  margin-top: 1rem;
   background: #09406d;
 }
 
@@ -768,62 +770,108 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
-.options-faculite{
+.options-faculite {
   width: 60%;
   gap: 5px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.options-faculite div{
+.options-faculite div {
   background: #09406d;
   width: 100%;
   padding: 5px 10px;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
-
-
-     /* PARTENAIRES */
-.nos-partenaires {
-  max-width: 1250px;
-  margin: auto;
-  margin-top: 2rem;
-  background-color: #ffffff7a;
-  box-shadow: 5px 2px 20px 5px #00000021;
-
-}
-.partenaires {
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-
-  
-  
-}
- .nos-partenaires .partenaire-header-div {
-  width: 1250px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: auto;
-} 
-.nos-partenaires .partenaire-header-div .partenaire-header {
+.options-faculite div:hover {
+  background: white;
+  border: 1px solid #0a2f4d;
   color: #09406d;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: Inter ,sans-serif;
 }
-.partenaire .title-partenaire {
-  color: #fda38d;
-  margin-left: 30%;
+.options-faculite div.active {
+  background: white;
+  border: 1px solid #0a2f4d;
+  color: #09406d;
 }
-.partenaire {
-  padding: 0.5rem;
+.content-tice {
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 200px auto;
+  margin-top: 1rem;
 }
-.partenaire img {
-  width: 230px;
-  height: 200px;
-  border-radius: 5px;
+.chapiteter ul {
+  padding: 10px 0;
+}
+.chapiteter ul li {
+  cursor: pointer;
+  padding: 15px 0;
+}
+.chapiteter ul li a {
+  color: #0a2f4d;
+}
+.chapiteter ul li:hover > a {
+  border-bottom: 1px solid #0a2f4d;
+}
+.title-content {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title-content div:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.title-content div:nth-child(2) {
+  font-size: 17px;
+  font-weight: 600;
+  color: #09406d;
+}
+.title-content div:nth-child(1)::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #09406d;
+  border-right: 10px solid transparent;
+}
+.mission-list {
+  list-style: decimal;
+  margin-top: 0.7rem;
+  margin-left: 5rem;
+  font-size: 0.97rem;
+}
+.title-content.sous-list div:nth-child(1)::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 8px solid #0778d4;
+  border-right: 8px solid transparent;
+}
+.bachelier {
+  padding: 10px 0;
+  display: block;
+}
+.title-content.sous-list {
+  margin-left: 2rem;
+}
+.title-content.sous-list ~ p {
+  margin-left: 2.2rem;
+}
+.list-Aptitudes {
+  margin-left: 2.2rem;
+  font-size: 15px;
+  list-style: circle;
 }
 @media screen and (max-width: 31.25em) {
   .header {
