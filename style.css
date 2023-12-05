@@ -73,7 +73,7 @@ a {
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: red;
 }
 
 .header {
