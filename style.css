@@ -900,12 +900,21 @@ body {
 .nos-partenaires .partenaire-header-div .partenaire-header {
   color: #09406d;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
+  padding: 1rem;
   font-family: Inter ,sans-serif;
+}
+.nos-partenaires .partenaire-header-div .partenaire-header:hover {
+  color: #fda38d;
+  margin-left: -1rem;
 }
 .partenaire .title-partenaire {
   color: #fda38d;
   margin-left: 30%;
+}
+.partenaire .title-partenaire:hover {
+  color: #09406d;
+  margin-left: 1rem;
 }
 .partenaire {
   padding: 0.5rem;
@@ -914,6 +923,75 @@ body {
   width: 230px;
   height: 200px;
   border-radius: 5px;
+}
+/* RICHESSE  */
+.richesse {
+  max-width: 1330px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.richesse .richesse-container {
+  height: 300px;
+  margin: 0.5rem;
+  margin-top: 3rem;
+
+}
+.img-desc-richesse {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 270px;
+
+
+}
+.img-desc-richesse:hover {
+  border-right: 2px solid #fda38d;
+
+}
+.img-desc-richesse p {
+  padding: 0.4rem;
+}
+.img-desc-richesse .subtitle-richesse {
+  color: #09406d ;
+  font-size: 15px;
+  font-weight: 800;
+}
+.desc-richesse {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.title-richesse {
+  color: #09406d;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 1rem;
+  font-family: Inter,sans-serif;
+}
+.img-desc-richesse img {
+  height: 270px;
+  border-radius: 10px;
+
+}
+.title-richesse:hover {
+  color: #fda38d;
+  margin-left: -1rem;
+}
+.img-desc-richesse a {
+  color: blue;
+}
+.img-desc-richesse a:hover ,
+.subtitle-richesse:hover{
+  margin-left: 1rem;
+    color: #1da1f2;
+
+}
+.paragraphe-richesse {
+  color: rgb(0, 0, 0);
+ 
+}
+.paragraphe-richesse:hover {
+   font-weight: 800;
+  color: black;
 }
 @media screen and (max-width: 31.25em) {
   .header {
@@ -949,5 +1027,3 @@ body {
     z-index: -1;
   }
 }
-/* this comment i from janeiro hurley to jubu niyoko */
-/* helooooo */
