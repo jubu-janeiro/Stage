@@ -282,7 +282,7 @@ body {
   align-items: center;
   color: white;
 }
-.student .emoji{
+.student .emoji {
   width: 50px;
   overflow: visible;
   height: 50px;
@@ -885,35 +885,31 @@ body {
   font-size: 15px;
   list-style: circle;
 }
-  /* PARTENAIRES */
+/* PARTENAIRES */
 .nos-partenaires {
   max-width: 1250px;
   margin: auto;
   margin-top: 2rem;
   background-color: #ffffff7a;
   box-shadow: 5px 2px 20px 5px #00000021;
-
 }
 .partenaires {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-
-  
-  
+  grid-template-columns: repeat(5, 1fr);
 }
- .nos-partenaires .partenaire-header-div {
+.nos-partenaires .partenaire-header-div {
   width: 1250px;
   justify-content: center;
   align-items: center;
   display: flex;
   margin: auto;
-} 
+}
 .nos-partenaires .partenaire-header-div .partenaire-header {
   color: #09406d;
   font-size: 25px;
   font-weight: 800;
   padding: 1rem;
-  font-family: Inter ,sans-serif;
+  font-family: Inter, sans-serif;
 }
 .nos-partenaires .partenaire-header-div .partenaire-header:hover {
   color: #fda38d;
@@ -940,48 +936,43 @@ body {
   max-width: 1330px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .richesse .richesse-container {
   height: 300px;
   margin: 0.5rem;
   margin-top: 3rem;
-
 }
 .img-desc-richesse {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   height: 270px;
-
-
 }
 .img-desc-richesse:hover {
   border-right: 2px solid #fda38d;
-
 }
 .img-desc-richesse p {
   padding: 0.4rem;
 }
 .img-desc-richesse .subtitle-richesse {
-  color: #09406d ;
+  color: #09406d;
   font-size: 15px;
   font-weight: 800;
 }
 .desc-richesse {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .title-richesse {
   color: #09406d;
   font-size: 25px;
   font-weight: 800;
   padding: 1rem;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
 }
 .img-desc-richesse img {
   height: 270px;
   border-radius: 10px;
-
 }
 .title-richesse:hover {
   color: #fda38d;
@@ -990,19 +981,105 @@ body {
 .img-desc-richesse a {
   color: blue;
 }
-.img-desc-richesse a:hover ,
-.subtitle-richesse:hover{
+.img-desc-richesse a:hover,
+.subtitle-richesse:hover {
   margin-left: 1rem;
-    color: #1da1f2;
-
+  color: #1da1f2;
 }
 .paragraphe-richesse {
   color: rgb(0, 0, 0);
- 
 }
 .paragraphe-richesse:hover {
-   font-weight: 800;
+  font-weight: 800;
   color: black;
+}
+/* =======================nouvel css================= */
+.section {
+  width: 80%;
+  height: max-content;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+.section-1 {
+  width: 650px;
+}
+.section-1 h1 {
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+.rating-box {
+  border: 1px solid rgba(17, 17, 17, 0.438);
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.rating-box .starts {
+  padding: 10px 0;
+}
+.rating-workd h3 {
+  padding: 4px 0;
+}
+.section-2 {
+  background: #09406d;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slider-section {
+  width: 100%;
+  height: 85%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100% ;
+  overflow: scroll;
+   transition: all 300ms ease;
+}
+.slider-section::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+.box-sliding {
+  padding: 30px;
+}
+.woerd-sliding {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.info-oersonel-sleding{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.photo-profil{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.description-student p:nth-child(1){
+margin-bottom: 5px;
+font-size: 1.1rem;
+}
+.description-student p:nth-child(2){
+font-size: 0.889rem;
+}
+.points-slidder{
+  width: 40%;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+  padding-left: 20px;
+  justify-content: space-around;
+}
+.points-slidder .points{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 31.25em) {
   .header {
