@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
-  background: #00000080;
+  background: #0a2f4d;
   position: fixed;
   z-index: 1;
   box-shadow: 0 0 90px #00000080;
@@ -353,7 +353,7 @@ body {
 
 .actuatites-items .actualites-items-item {
   display: block;
-  box-shadow: 5px 10px 5px 5px#dbdbdb4f;
+  box-shadow: 5px 2px 20px 5px #00000021;
   border-radius: 10px;
   height: max-content;
   padding-bottom: 1rem;
@@ -990,8 +990,7 @@ body {
   color: rgb(0, 0, 0);
 }
 .paragraphe-richesse:hover {
-  font-weight: 800;
-  color: black;
+  color: #073a64d3;
 }
 /* =======================nouvel css================= */
 .section {
@@ -1032,9 +1031,9 @@ body {
   height: 85%;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 100% ;
+  grid-auto-columns: 100%;
   overflow: scroll;
-   transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .slider-section::-webkit-scrollbar {
   width: 0px;
@@ -1048,25 +1047,25 @@ body {
   display: inline-block;
   margin-bottom: 3rem;
 }
-.info-oersonel-sleding{
+.info-oersonel-sleding {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.photo-profil{
+.photo-profil {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   overflow: hidden;
 }
-.description-student p:nth-child(1){
-margin-bottom: 5px;
-font-size: 1.1rem;
+.description-student p:nth-child(1) {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
 }
-.description-student p:nth-child(2){
-font-size: 0.889rem;
+.description-student p:nth-child(2) {
+  font-size: 0.889rem;
 }
-.points-slidder{
+.points-slidder {
   width: 40%;
   margin: auto;
   display: flex;
@@ -1074,13 +1073,153 @@ font-size: 0.889rem;
   padding-left: 20px;
   justify-content: space-around;
 }
-.points-slidder .points{
+.points-slidder .points {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: white;
   cursor: pointer;
 }
+/* PAGE OF BLOG */
+.container-blog {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.356);
+}
+.container-blog .line {
+  width: 100px;
+  height: 5px;
+  background-color: #09406da6;
+}
+.container-blog h1 {
+  color: #09406d;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.author .user-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.author {
+  padding: 0.5rem;
+  max-width: max-content;
+}
+.reponse,
+.question {
+  margin-left: 5.5%;
+  margin-top: -1.5%;
+}
+.reponses {
+  margin-left: 5%;
+}
+.create-reponse-input,
+.create-question-input {
+  width: 50%;
+  outline: none;
+  height: 50px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #f2a18d7e;
+}
+.create-reponse-div {
+  margin-left: 6%;
+}
+.create-reponse-div span {
+  color: rgba(0, 0, 255, 0.582);
+}
+
+.need-create-reponse {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  width: 200px;
+}
+.create-new-question {
+  margin-top: 1rem;
+  width: 130px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #f2a18d;
+  border: 1px solid #f2a18d;
+}
+.need-create-reponse .hide {
+  display: none;
+}
+.username {
+  color: #09406d;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+.reponses .username {
+  font-size: 11px;
+}
+.need-create-reponse:hover,
+.username:hover {
+  color: #f2a18d;
+  margin-left: 0.5rem;
+}
+.question-paragraphe {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Inter, sans-serif;
+}
+.question-paragraphe:hover {
+  margin-left: 0.1rem;
+  color: #09406d;
+  border-right: 6px solid #f2a18d;
+}
+.create-reponse-input,
+.create-question {
+  display: none;
+}
+.create-reponse-input.show,
+.create-question.show {
+  display: block;
+}
+.create-new-question.clicked {
+  width: 170px;
+  background-color: #f2a18d;
+  color: white;
+}
+.question-paragraphe .note {
+  color: #f77555;
+  font-weight: 900;
+  font-size: 13px;
+}
+.hide-border1,
+.hide-border2,
+.hide-border3 {
+  width: 82%;
+  height: 3px;
+  position: absolute;
+  margin-left: 6%;
+  background-color: white;
+}
+.hide-border1 {
+  margin-top: 9.7rem;
+}
+.hide-border2 {
+  margin-top: 19.2rem;
+}
+.hide-border3 {
+  margin-top: 23.3rem;
+}
+.reponses {
+  border-left: 2px dashed #0778d4;
+  border-bottom: 2px solid #0778d4;
+}
+
 @media screen and (max-width: 31.25em) {
   .header {
     display: flex;
