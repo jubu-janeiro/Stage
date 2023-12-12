@@ -1032,9 +1032,9 @@ body {
   height: 85%;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 100% ;
+  grid-auto-columns: 100%;
   overflow: scroll;
-   transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .slider-section::-webkit-scrollbar {
   width: 0px;
@@ -1048,25 +1048,25 @@ body {
   display: inline-block;
   margin-bottom: 3rem;
 }
-.info-oersonel-sleding{
+.info-oersonel-sleding {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.photo-profil{
+.photo-profil {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   overflow: hidden;
 }
-.description-student p:nth-child(1){
-margin-bottom: 5px;
-font-size: 1.1rem;
+.description-student p:nth-child(1) {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
 }
-.description-student p:nth-child(2){
-font-size: 0.889rem;
+.description-student p:nth-child(2) {
+  font-size: 0.889rem;
 }
-.points-slidder{
+.points-slidder {
   width: 40%;
   margin: auto;
   display: flex;
@@ -1074,7 +1074,7 @@ font-size: 0.889rem;
   padding-left: 20px;
   justify-content: space-around;
 }
-.points-slidder .points{
+.points-slidder .points {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1114,4 +1114,134 @@ font-size: 0.889rem;
   .banner {
     z-index: -1;
   }
+}
+.personnal-info {
+  width: 80%;
+  margin: auto;
+}
+.personnal-info h2 {
+  font-size: 1rem;
+}
+.personnal-info .form-inputs {
+  padding: 10px 5px;
+}
+.personnal-info .form-inputs .input {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.personnal-info .form-inputs .input label {
+  font-size: 0.9rem;
+  position: relative;
+}
+.personnal-info .form-inputs .input div {
+  display: flex;
+  flex-direction: column;
+}
+.personnal-info .form-inputs .input.input1 div {
+  width: 32.1%;
+}
+.personnal-info .form-inputs .input.input1 div input {
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.534);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px 0;
+}
+.personnal-info .form-inputs .input.input2 {
+  display: block;
+}
+.personnal-info .form-inputs .input.input2 .selects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2%;
+}
+.personnal-info .form-inputs .input.input2 .selects select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.534);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px 0;
+}
+.personnal-info .form-inputs .input.input3 {
+  display: flex;
+  gap: 2%;
+}
+.personnal-info .form-inputs .input.input3 div {
+  width: 100%;
+}
+.personnal-info .form-inputs .input.input3 .selects select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.534);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px 0;
+}
+
+.personnal-info .form-inputs .input.input3 div input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.534);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px 0;
+}
+.personnal-info .form-inputs .input.input1 .selects {
+  width: 100%;
+}
+.personnal-info .form-inputs .input.input1 .selects select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.534);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px 0;
+}
+
+.personnal-info .form-inputs .input label p {
+  font-size: 0.8rem;
+  padding: 7px 6px;
+  width: 80%;
+  background: #09406d;
+  color: white;
+  border-radius: 7px;
+  position: absolute;
+  top: -40px;
+  right: 2%;
+  opacity: 0;
+  pointer-events: none;
+}
+.personnal-info .form-inputs .input label ion-icon:hover {
+  background: #09406d;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.personnal-info .form-inputs .input label ion-icon:hover ~ p {
+  opacity: 1;
+  pointer-events: all;
+}
+.next-page-container {
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.personnal-info .next-page {
+  width: max-content;
+  padding: 5.7px 12px;
+  border-radius: 5px;
+  color: white;
+  background: #09406d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.personnal-info .next-page:hover{
+  border: 1px solid #09406d;
+  color: #0a2f4d;
+  background: white;
 }
